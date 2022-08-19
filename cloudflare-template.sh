@@ -8,8 +8,31 @@ zone_identifier=""                                  # Can be found in the "Overv
 record_name=""                                      # Which record you want to be synced
 ttl="3600"                                          # Set the DNS TTL (seconds)
 proxy="false"                                       # Set the proxy to true or false
-sitename=""                                         # Title of site "Example Site"
 
+###########################################
+## Set variables
+###########################################
+
+if [[auth_email == ""]]; then
+  # Set auth email to env variable if you set in script
+  auth_email=$AUTH_EMAIL
+fi
+
+if [[auth_key == ""]]; then
+  # Set auth key to env variable if you set in script
+  auth_key=$AUTH_KEY
+fi
+
+if [[zone_identifier == ""]]; then
+  # Set zone_identifier to env variable if you set in script
+  zone_identifier=$ZONE_IDENTIFIER
+fi
+
+
+if [[record_name == ""]]; then
+  # Set record name to env variable if you set in script
+  record_name=$RECORD_NAME
+fi
 
 ###########################################
 ## Check if we have a public IP

@@ -1,0 +1,11 @@
+version: '3.6'
+
+services:
+
+  cloudflare-ddns:
+    image: cloudflare-ddns:1.0.0
+    environment: 
+      - AUTH_EMAIL=
+      - AUTH_KEY=
+      - ZONE_IDENTIFIER=
+      - RECORD_NAME=

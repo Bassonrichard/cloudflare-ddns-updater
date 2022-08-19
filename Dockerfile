@@ -19,7 +19,7 @@ RUN crontab /etc/cron.d/cronfile
 RUN touch /var/log/cron.log
 
 # Add the cron job
-RUN crontab -l | { cat; echo "*/1 * * * * bash /root/cloudflare-template.sh"; } | crontab -
+RUN crontab -l | { cat; echo "*/1 * * * * /bin/bash /root/cloudflare-template.sh"; } | crontab -
 
 # Run the command on container startup
 CMD cron && tail -f /var/log/cron.log

@@ -9,9 +9,6 @@ record_name=""                                      # Which record you want to b
 ttl="3600"                                          # Set the DNS TTL (seconds)
 proxy="false"                                       # Set the proxy to true or false
 sitename=""                                         # Title of site "Example Site"
-slackchannel=""                                     # Slack Channel #example
-slackuri=""                                         # URI for Slack WebHook "https://hooks.slack.com/services/xxxxx"
-discorduri=""                                       # URI for Discord WebHook "https://discordapp.com/api/webhooks/xxxxx"
 
 
 ###########################################

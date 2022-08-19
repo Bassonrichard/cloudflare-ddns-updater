@@ -13,26 +13,26 @@ proxy="false"                                       # Set the proxy to true or f
 ## Set variables
 ###########################################
 
-if [[$auth_email == ""]]; then
+if [[ $auth_email == "" ]]; then
   # Set auth email to env variable if you set in script
   auth_email=$AUTH_EMAIL
   logger -s "Config: Set auth_email."
 fi
 
-if [[$auth_key == ""]]; then
+if [[ $auth_key == "" ]]; then
   # Set auth key to env variable if you set in script
   auth_key=$AUTH_KEY
   logger -s "Config: Set auth_key."
 fi
 
-if [[$zone_identifier == ""]]; then
+if [[ $zone_identifier == "" ]]; then
   # Set zone_identifier to env variable if you set in script
   zone_identifier=$ZONE_IDENTIFIER
   logger -s "Config: Set zone_identifier."
 fi
 
 
-if [[$record_name == ""]]; then
+if [[ $record_name == "" ]]; then
   # Set record name to env variable if you set in script
   record_name=$RECORD_NAME
   logger -s "Config: Set record_name."

@@ -1,1 +1,0 @@
-*/1 * * * * /bin/bash /root/cloudflare-template.sh
